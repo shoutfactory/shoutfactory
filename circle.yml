@@ -1,0 +1,27 @@
+machine:
+  ruby:
+    version: 2.0.0-p247
+
+general:
+  artifacts:
+    - "screenshots"
+    - "results.html"
+
+dependencies:
+  pre:
+    - sudo wget ftp.mozilla.org/pub/mozilla.org/firefox/releases/41.0/linux-i686/en-US/firefox-41.0.tar.bz2
+    - sudo tar -xjvf firefox-41.0.tar.bz2
+    - sudo rm -rf /opt/firefox*
+    - sudo mv firefox /opt/firefox
+    - sudo ln -sf /opt/firefox/firefox /usr/bin/firefox
+
+test:
+  override:
+    - bundle exec cucmber:
+
+
+
+
+
+
+
