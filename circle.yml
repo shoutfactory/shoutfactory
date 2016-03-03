@@ -16,7 +16,6 @@ dependencies:
     - sudo ln -sf /opt/firefox/firefox /usr/bin/firefox
 
 test:
-  override:
     - bundle exec cucmber:
 
 
