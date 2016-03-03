@@ -1,0 +1,12 @@
+#Application urls
+:shoutfactory_url: http://training.shoutfactory.net/
+
+
+#Capybara configuration
+:wait_time: 60
+:default_selector: :css
+:run_server: false
+:ignore_hidden_elements: false
+:match: :prefer_exact
+:driver: selenium
+
